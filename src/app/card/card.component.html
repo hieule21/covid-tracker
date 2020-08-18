@@ -1,0 +1,38 @@
+<mat-card>
+  <mat-card-subtitle class="margin-5">Positive Cases</mat-card-subtitle>
+  <mat-card-content>
+    <p
+      class="margin-5"
+      [style.color]="'orange'"
+      [countUp]="cardData.positive"
+    ></p>
+    <mat-card-subtitle class="margin-5">{{
+      cardData.dateChecked | date
+    }}</mat-card-subtitle>
+    <p class="mat-title">In {{ cardData.state }}</p>
+  </mat-card-content>
+</mat-card>
+<mat-card>
+  <mat-card-subtitle class="margin-5">Recovered Cases</mat-card-subtitle>
+  <mat-card-content>
+    <p
+      class="margin-5"
+      [style.color]="'green'"
+      [countUp]="cardData.recovered"
+    ></p>
+    <mat-card-subtitle class="margin-5">{{
+      cardData.dateChecked | date
+    }}</mat-card-subtitle>
+    <p class="mat-title">In {{ cardData.state }}</p>
+  </mat-card-content>
+</mat-card>
+<mat-card>
+  <mat-card-subtitle class="margin-5">Deaths Cases</mat-card-subtitle>
+  <mat-card-content>
+    <p class="margin-5" [style.color]="'red'" [countUp]="cardData.death"></p>
+    <mat-card-subtitle class="margin-5">{{
+      cardData.dateChecked | date
+    }}</mat-card-subtitle>
+    <p class="mat-title">In {{ cardData.state }}</p>
+  </mat-card-content>
+</mat-card>

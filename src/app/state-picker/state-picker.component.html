@@ -1,0 +1,11 @@
+<mat-form-field>
+  <mat-label>Select a state</mat-label>
+  <mat-select
+    [value]="selectedIndex$ | async"
+    (selectionChange)="onSelectionChanged($event)"
+  >
+    <mat-option [value]="state.value" *ngFor="let state of states">
+      {{ state.viewValue }}
+    </mat-option>
+  </mat-select>
+</mat-form-field>

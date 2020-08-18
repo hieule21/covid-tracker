@@ -1,0 +1,16 @@
+app-state-picker {
+  margin: 4vh auto 0;
+  padding-bottom: 0;
+}
+
+app-chart {
+  margin: 0 auto 0;
+}
+h1 {
+  text-align: center;
+  font-weight: 500;
+}
+.displayCol {
+  display: flex;
+  flex-direction: column;
+}

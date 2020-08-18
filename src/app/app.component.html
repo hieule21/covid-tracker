@@ -1,0 +1,14 @@
+<mat-grid-list cols="5" rowHeight="fit" [style.height]="'100vh'">
+  <mat-grid-tile rowspan="2" colspan="1"><app-card></app-card> </mat-grid-tile>
+  <mat-grid-tile rowspan="2" colspan="4">
+    <div class="displayCol">
+      <h1 mat-display-4>COVID-19 IN THE U.S</h1>
+      <app-state-picker></app-state-picker>
+      <div *ngIf="selectedIndex === 0; then thenBlock; else elseBlock"></div>
+      <ng-template #thenBlock><app-chart></app-chart></ng-template>
+      <ng-template #elseBlock>
+        <app-state-charts></app-state-charts>
+      </ng-template>
+    </div>
+  </mat-grid-tile>
+</mat-grid-list>

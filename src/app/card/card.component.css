@@ -1,0 +1,17 @@
+.margin-5 {
+  margin-bottom: 5px !important;
+}
+
+#margin-5 {
+  margin-bottom: 5px !important;
+}
+mat-card {
+  max-height: 20vh;
+  margin: 20% auto 20%;
+  min-width: 10vw;
+}
+mat-card-content {
+  line-height: 1.5;
+  font-size: 1.75rem;
+  margin-bottom: 5px !important;
+}
